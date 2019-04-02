@@ -1,29 +1,48 @@
+body{
+    background: #e6caaf;
+}
+
 #main{
-    /*background: #faf5ff;*/
     font-family: "Bodoni MT", sans-serif;
     text-align: center;
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: auto auto auto auto;
     /*grid-template-areas:*/
             /*"header timeline"*/
             /*"tribute-info timeline"*/
             /*"tribute-link timeline";*/
 }
 
-#main-content{
-    grid-area: 1/2/4/3;
+#title{
+    font-family: Papyrus, sans-serif;
+    font-weight: bold;
 }
 
-#title{
-    font-family: Papyrus, cursive, sans-serif;
+#header{
+    border: solid #faf5ff;
+    grid-area: 1/2/2/3;
+}
+
+#tribute-info{
+    border: solid #faf5ff;
+    grid-area: 2/2/3/3;
 }
 
 #tribute-footer{
+    border: solid #faf5ff;
     font-size: 20px;
-    grid-area: 3/1/4/4;
+    grid-area: 3/2/4/3;
+}
+
+#general-info{
+    border: solid #faf5ff;
+}
+
+#education-info{
+    border: solid #faf5ff;
 }
 
 #image{
@@ -31,9 +50,6 @@
     margin-right: auto;
     width: 50%;
     border-radius: 50%;
-    margin-bottom: 0px;
-    border-bottom: 0px;
-    padding-bottom: 0px;
 }
 
 #img-caption{
@@ -44,10 +60,6 @@ img{
     max-width: 460px;
 }
 
-.info{
-    float: left;
-}
-
 .colorOne{
     background: #fffaf5;
 }
@@ -55,10 +67,3 @@ img{
 .colorTwo{
     background: #f5ffff;
 }
-/*#header{*/
-/*grid-area: 1/1/2/4;*/
-/*}*/
-
-/*#tribute-info{*/
-/*grid-area: 2/1/3/4;*/
-/*}*/
