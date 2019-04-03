@@ -60,6 +60,15 @@ img{
     max-width: 460px;
 }
 
+ul{
+    max-width: 400px;
+    margin: 0 auto 0 275px;
+    text-align: left;
+}
+li{
+    margin: 10px;
+}
+
 .colorOne{
     background: #fffaf5;
 }
